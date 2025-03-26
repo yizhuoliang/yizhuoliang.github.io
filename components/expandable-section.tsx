@@ -15,8 +15,8 @@ export function ExpandableSection({ title, children, defaultExpanded = false, su
   const [isExpanded, setIsExpanded] = useState(defaultExpanded)
 
   return (
-    <div className="mb-6">
-      <div className="rounded-3xl bg-white shadow-md">
+    <div className="mb-8">
+      <div className="rounded-3xl bg-white border border-zinc-100">
         <button
           onClick={() => setIsExpanded(!isExpanded)}
           className="flex w-full items-start justify-between p-6 transition-all duration-200 hover:bg-zinc-50 rounded-3xl group"

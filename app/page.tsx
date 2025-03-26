@@ -9,19 +9,26 @@ export default function Home() {
         <div className="flex flex-col md:flex-row md:gap-12">
           {/* Left column: Namecard and Photo */}
           <div className="md:w-[30%] md:sticky md:top-8 md:self-start">
-            <div className="mb-8 flex flex-col gap-4">
+            <div className="mb-8 flex flex-col gap-8">
               {/* Namecard */}
               <Card className="flex-grow overflow-hidden bg-gradient-to-r from-zinc-800 to-zinc-900 shadow-lg border-none">
                 <div className="p-8 text-white">
                   <h1 className="mb-2 text-3xl font-bold">Yizhuo Liang (Coulson)</h1>
                   <p className="text-zinc-300">CS PhD Student @USC</p>
-                  <div className="mt-3 flex flex-wrap gap-3 text-xs text-zinc-400">
+                </div>
+              </Card>
+              
+              {/* Contact Card */}
+              <Card className="overflow-hidden bg-gradient-to-r from-zinc-800 to-zinc-900 shadow-lg border-none">
+                <div className="p-5 text-white">
+                  <div className="flex flex-wrap gap-3 text-xs text-zinc-400">
                     <a href="mailto:cl_488@usc.edu" className="hover:text-white rounded-full px-3 py-1.5 bg-zinc-800 hover:bg-zinc-700 transition-colors">cl_488@usc.edu</a>
                     <a href="tel:+16463397401" className="hover:text-white rounded-full px-3 py-1.5 bg-zinc-800 hover:bg-zinc-700 transition-colors">+1 (646) 339 7401</a>
                     <a href="https://github.com/yizhuoliang" className="hover:text-white rounded-full px-3 py-1.5 bg-zinc-800 hover:bg-zinc-700 transition-colors">github.com/yizhuoliang</a>
                   </div>
                 </div>
               </Card>
+              
               {/* Photo */}
               <Card className="w-full h-48 md:h-auto md:aspect-square overflow-hidden shadow-lg border-none">
                 <Image
@@ -38,7 +45,7 @@ export default function Home() {
           {/* Right column: Bio and Expandable sections */}
           <div className="md:w-[70%]">
             {/* Bio Section */}
-            <Card className="mb-8 bg-white shadow-lg border border-zinc-100">
+            <Card className="mb-8 bg-white border border-zinc-100">
               <div className="p-6">
                 <p className="text-sm text-zinc-700 leading-relaxed">
                   Hi, I'm an incoming PhD at University of Southern California, advised by Professor Seo Jin Park. I have a broad interest of distributed and operating systems.
