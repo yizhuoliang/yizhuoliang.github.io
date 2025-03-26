@@ -1,8 +1,22 @@
 import type { Metadata } from "next"
-import { Inter } from 'next/font/google'
+import localFont from 'next/font/local'
 import "./globals.css"
 
-const inter = Inter({ subsets: ["latin"] })
+const mapleMono = localFont({
+  src: [
+    {
+      path: '../public/fonts/MapleMono-TTF/MapleMono-Regular.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../public/fonts/MapleMono-TTF/MapleMono-Bold.ttf',
+      weight: '700',
+      style: 'normal',
+    }
+  ],
+  variable: '--font-maple-mono'
+})
 
 export const metadata: Metadata = {
   title: "Yizhuo Liang - Computer Science Researcher",
@@ -16,7 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} bg-zinc-100 text-zinc-900`}>
+      <body className={`${mapleMono.variable} font-mono bg-zinc-100 text-zinc-900`}>
         {children}
       </body>
     </html>

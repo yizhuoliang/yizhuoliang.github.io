@@ -14,8 +14,8 @@ export default function Home() {
               <Card className="flex-grow overflow-hidden bg-gradient-to-r from-zinc-800 to-zinc-900">
                 <div className="p-8 text-white">
                   <h1 className="mb-2 text-3xl font-bold">Yizhuo Liang (Coulson)</h1>
-                  <p className="text-zinc-300">Computer Science Researcher</p>
-                  <div className="mt-4 flex flex-wrap gap-4 text-sm text-zinc-400">
+                  <p className="text-zinc-300">Incoming PhD Student @USC</p>
+                  <div className="mt-3 flex flex-wrap gap-3 text-xs text-zinc-400">
                     <a href="mailto:cl_488@usc.edu" className="hover:text-white">cl_488@usc.edu</a>
                     <a href="tel:+16463397401" className="hover:text-white">+1 (646) 339 7401</a>
                     <a href="https://github.com/yizhuoliang" className="hover:text-white">github.com/yizhuoliang</a>
