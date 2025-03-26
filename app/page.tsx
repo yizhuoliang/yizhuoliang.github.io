@@ -23,7 +23,6 @@ export default function Home() {
                 <div className="p-5 text-white">
                   <div className="flex flex-wrap gap-3 text-xs text-zinc-400">
                     <a href="mailto:cl_488@usc.edu" className="hover:text-white rounded-full px-3 py-1.5 bg-zinc-800 hover:bg-zinc-700 transition-colors">cl_488@usc.edu</a>
-                    <a href="tel:+16463397401" className="hover:text-white rounded-full px-3 py-1.5 bg-zinc-800 hover:bg-zinc-700 transition-colors">+1 (646) 339 7401</a>
                     <a href="https://github.com/yizhuoliang" className="hover:text-white rounded-full px-3 py-1.5 bg-zinc-800 hover:bg-zinc-700 transition-colors">github.com/yizhuoliang</a>
                   </div>
                 </div>
