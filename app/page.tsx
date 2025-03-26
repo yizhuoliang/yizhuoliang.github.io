@@ -4,9 +4,9 @@ import { ExpandableSection } from "@/components/expandable-section"
 
 export default function Home() {
   return (
-    <main className="min-h-screen p-4 md:p-8 bg-zinc-100">
+    <main className="min-h-screen p-4 md:p-8 bg-zinc-100 dark:bg-zinc-100">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 xl:max-w-6xl">
-        <div className="flex flex-col md:flex-row md:gap-12">
+        <div className="flex flex-col md:flex-row md:gap-16">
           {/* Left column: Namecard and Photo */}
           <div className="md:w-[30%] md:sticky md:top-8 md:self-start">
             <div className="mb-8 flex flex-col gap-8">
@@ -18,18 +18,8 @@ export default function Home() {
                 </div>
               </Card>
               
-              {/* Contact Card */}
-              <Card className="overflow-hidden bg-gradient-to-r from-zinc-800 to-zinc-900 shadow-lg border-none">
-                <div className="p-5 text-white">
-                  <div className="flex flex-wrap gap-3 text-xs text-zinc-400">
-                    <a href="mailto:cl_488@usc.edu" className="hover:text-white rounded-full px-3 py-1.5 bg-zinc-800 hover:bg-zinc-700 transition-colors">cl_488@usc.edu</a>
-                    <a href="https://github.com/yizhuoliang" className="hover:text-white rounded-full px-3 py-1.5 bg-zinc-800 hover:bg-zinc-700 transition-colors">github.com/yizhuoliang</a>
-                  </div>
-                </div>
-              </Card>
-              
               {/* Photo */}
-              <Card className="w-full h-48 md:h-auto md:aspect-square overflow-hidden shadow-lg border-none">
+              <Card className="w-full h-48 md:h-auto md:aspect-square overflow-hidden shadow-lg border-none dark:border-zinc-200">
                 <Image
 		  src="/pics/coulson-faker.jpg"
                   alt="Yizhuo Liang"
@@ -38,15 +28,26 @@ export default function Home() {
                   className="object-cover w-full h-full transition-transform hover:scale-105 duration-300"
                 />
               </Card>
+              
+              {/* Contact Card */}
+              <Card className="bg-white border border-zinc-100 dark:bg-white dark:border-zinc-100">
+                <div className="p-6">
+                  <h3 className="text-sm font-medium mb-3 text-zinc-700 dark:text-zinc-700">Contact</h3>
+                  <div className="flex flex-wrap gap-3">
+                    <a href="mailto:cl_488@usc.edu" className="text-xs rounded-full px-3 py-1.5 bg-zinc-100 text-zinc-800 hover:bg-zinc-200 transition-colors dark:bg-zinc-100 dark:text-zinc-800 dark:hover:bg-zinc-200">cl_488@usc.edu</a>
+                    <a href="https://github.com/yizhuoliang" className="text-xs rounded-full px-3 py-1.5 bg-zinc-100 text-zinc-800 hover:bg-zinc-200 transition-colors dark:bg-zinc-100 dark:text-zinc-800 dark:hover:bg-zinc-200">github.com/yizhuoliang</a>
+                  </div>
+                </div>
+              </Card>
             </div>
           </div>
 
           {/* Right column: Bio and Expandable sections */}
           <div className="md:w-[70%]">
             {/* Bio Section */}
-            <Card className="mb-8 bg-white border border-zinc-100">
+            <Card className="mb-8 bg-white border border-zinc-100 dark:bg-white dark:border-zinc-100">
               <div className="p-6">
-                <p className="text-sm text-zinc-700 leading-relaxed">
+                <p className="text-sm text-zinc-700 leading-relaxed dark:text-zinc-700">
                   Hi, I'm an incoming PhD at University of Southern California, advised by Professor Seo Jin Park. I have a broad interest of distributed and operating systems.
                 </p>
               </div>
@@ -102,9 +103,9 @@ export default function Home() {
                     July 2024 - Present
                   </p>
                   <ul className="mt-3 space-y-3 pl-5 text-sm">
-                    <li className="rounded-lg bg-zinc-50 p-2.5 border border-zinc-100 shadow-sm">Built a tool for monitoring application performance and profiling resource usage at microsecond scale.</li>
-                    <li className="rounded-lg bg-zinc-50 p-2.5 border border-zinc-100 shadow-sm">Achieved less than 10% runtime overhead while identifying lock contention, interference, and hardware resource bottlenecks.</li>
-                    <li className="rounded-lg bg-zinc-50 p-2.5 border border-zinc-100 shadow-sm">Investigating memory bandwidth contention and resource demand heterogeneity.</li>
+                    <li className="rounded-lg bg-zinc-50 p-2.5 border border-zinc-100 shadow-sm dark:bg-zinc-50 dark:text-zinc-800 dark:border-zinc-100">Built a tool for monitoring application performance and profiling resource usage at microsecond scale.</li>
+                    <li className="rounded-lg bg-zinc-50 p-2.5 border border-zinc-100 shadow-sm dark:bg-zinc-50 dark:text-zinc-800 dark:border-zinc-100">Achieved less than 10% runtime overhead while identifying lock contention, interference, and hardware resource bottlenecks.</li>
+                    <li className="rounded-lg bg-zinc-50 p-2.5 border border-zinc-100 shadow-sm dark:bg-zinc-50 dark:text-zinc-800 dark:border-zinc-100">Investigating memory bandwidth contention and resource demand heterogeneity.</li>
                   </ul>
                 </div>
 
@@ -117,10 +118,10 @@ export default function Home() {
                     June 2023 - June 2024
                   </p>
                   <ul className="mt-3 space-y-3 pl-5 text-sm">
-                    <li className="rounded-lg bg-zinc-50 p-2.5 border border-zinc-100 shadow-sm">Built a Software Fault Isolation system for process-level sandboxing.</li>
-                    <li className="rounded-lg bg-zinc-50 p-2.5 border border-zinc-100 shadow-sm">Implemented a library OS with fast inter-process communications.</li>
-                    <li className="rounded-lg bg-zinc-50 p-2.5 border border-zinc-100 shadow-sm">Made benchmarks 75-200% faster than native Linux.</li>
-                    <li className="rounded-lg bg-zinc-50 p-2.5 border border-zinc-100 shadow-sm">Led transition to WASM runtimes and ported glibc to WASM.</li>
+                    <li className="rounded-lg bg-zinc-50 p-2.5 border border-zinc-100 shadow-sm dark:bg-zinc-50 dark:text-zinc-800 dark:border-zinc-100">Built a Software Fault Isolation system for process-level sandboxing.</li>
+                    <li className="rounded-lg bg-zinc-50 p-2.5 border border-zinc-100 shadow-sm dark:bg-zinc-50 dark:text-zinc-800 dark:border-zinc-100">Implemented a library OS with fast inter-process communications.</li>
+                    <li className="rounded-lg bg-zinc-50 p-2.5 border border-zinc-100 shadow-sm dark:bg-zinc-50 dark:text-zinc-800 dark:border-zinc-100">Made benchmarks 75-200% faster than native Linux.</li>
+                    <li className="rounded-lg bg-zinc-50 p-2.5 border border-zinc-100 shadow-sm dark:bg-zinc-50 dark:text-zinc-800 dark:border-zinc-100">Led transition to WASM runtimes and ported glibc to WASM.</li>
                   </ul>
                 </div>
               </div>
@@ -134,7 +135,7 @@ export default function Home() {
                   {["Go", "C", "Rust", "Python", "Java", "Coq"].map((skill) => (
                     <span
                       key={skill}
-                      className="rounded-full bg-zinc-100 px-4 py-2 text-xs font-medium text-zinc-800 border border-zinc-200 shadow-sm"
+                      className="rounded-full bg-zinc-100 px-4 py-2 text-xs font-medium text-zinc-800 border border-zinc-200 shadow-sm dark:bg-zinc-100 dark:text-zinc-800 dark:border-zinc-200"
                     >
                       {skill}
                     </span>
@@ -149,7 +150,7 @@ export default function Home() {
                     {["Go", "C", "Rust", "Python", "Java", "Coq"].map((skill) => (
                       <span
                         key={skill}
-                        className="rounded-full bg-zinc-100 px-4 py-2 text-sm font-medium text-zinc-800 border border-zinc-200 shadow-sm"
+                        className="rounded-full bg-zinc-100 px-4 py-2 text-sm font-medium text-zinc-800 border border-zinc-200 shadow-sm dark:bg-zinc-100 dark:text-zinc-800 dark:border-zinc-200"
                       >
                         {skill}
                       </span>
@@ -170,7 +171,7 @@ export default function Home() {
                     ].map((skill) => (
                       <span
                         key={skill}
-                        className="rounded-full bg-zinc-200 px-4 py-2 text-sm font-medium text-zinc-800 border border-zinc-300 shadow-sm"
+                        className="rounded-full bg-zinc-200 px-4 py-2 text-sm font-medium text-zinc-800 border border-zinc-300 shadow-sm dark:bg-zinc-200 dark:text-zinc-800 dark:border-zinc-300"
                       >
                         {skill}
                       </span>
