@@ -41,7 +41,7 @@ export default function Home() {
             <Card className="mb-8 bg-white shadow-sm">
               <div className="p-4">
                 <p className="text-sm text-zinc-700 leading-relaxed">
-                  Hi, I am currently a full-time research intern at the Networked Systems Lab, University of Southern California. I am actively looking for PhD opportunities, with a broad interest of distributed and operating systems.
+                  Hi, I'm an incoming PhD at University of Southern California, advised by Professor Seo Jin Park. I have a broad interest of distributed and operating systems.
                 </p>
               </div>
             </Card>
