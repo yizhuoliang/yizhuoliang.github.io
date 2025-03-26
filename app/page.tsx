@@ -11,25 +11,25 @@ export default function Home() {
           <div className="md:w-[30%] md:sticky md:top-8 md:self-start">
             <div className="mb-8 flex flex-col gap-4">
               {/* Namecard */}
-              <Card className="flex-grow overflow-hidden bg-gradient-to-r from-zinc-800 to-zinc-900 shadow-md border-none">
+              <Card className="flex-grow overflow-hidden bg-gradient-to-r from-zinc-800 to-zinc-900 shadow-lg border-none">
                 <div className="p-8 text-white">
                   <h1 className="mb-2 text-3xl font-bold">Yizhuo Liang (Coulson)</h1>
                   <p className="text-zinc-300">CS PhD Student @USC</p>
                   <div className="mt-3 flex flex-wrap gap-3 text-xs text-zinc-400">
-                    <a href="mailto:cl_488@usc.edu" className="hover:text-white rounded-full px-2 py-1 bg-zinc-800 hover:bg-zinc-700 transition-colors">cl_488@usc.edu</a>
-                    <a href="tel:+16463397401" className="hover:text-white rounded-full px-2 py-1 bg-zinc-800 hover:bg-zinc-700 transition-colors">+1 (646) 339 7401</a>
-                    <a href="https://github.com/yizhuoliang" className="hover:text-white rounded-full px-2 py-1 bg-zinc-800 hover:bg-zinc-700 transition-colors">github.com/yizhuoliang</a>
+                    <a href="mailto:cl_488@usc.edu" className="hover:text-white rounded-full px-3 py-1.5 bg-zinc-800 hover:bg-zinc-700 transition-colors">cl_488@usc.edu</a>
+                    <a href="tel:+16463397401" className="hover:text-white rounded-full px-3 py-1.5 bg-zinc-800 hover:bg-zinc-700 transition-colors">+1 (646) 339 7401</a>
+                    <a href="https://github.com/yizhuoliang" className="hover:text-white rounded-full px-3 py-1.5 bg-zinc-800 hover:bg-zinc-700 transition-colors">github.com/yizhuoliang</a>
                   </div>
                 </div>
               </Card>
               {/* Photo */}
-              <Card className="w-full h-48 md:h-auto md:aspect-square overflow-hidden shadow-md border-none">
+              <Card className="w-full h-48 md:h-auto md:aspect-square overflow-hidden shadow-lg border-none">
                 <Image
 		  src="/pics/coulson-faker.jpg"
                   alt="Yizhuo Liang"
                   width={400}
                   height={400}
-                  className="object-cover w-full h-full"
+                  className="object-cover w-full h-full transition-transform hover:scale-105 duration-300"
                 />
               </Card>
             </div>
@@ -38,8 +38,8 @@ export default function Home() {
           {/* Right column: Bio and Expandable sections */}
           <div className="md:w-[70%]">
             {/* Bio Section */}
-            <Card className="mb-8 bg-white shadow-md">
-              <div className="p-5">
+            <Card className="mb-8 bg-white shadow-lg border border-zinc-100">
+              <div className="p-6">
                 <p className="text-sm text-zinc-700 leading-relaxed">
                   Hi, I'm an incoming PhD at University of Southern California, advised by Professor Seo Jin Park. I have a broad interest of distributed and operating systems.
                 </p>
@@ -95,10 +95,10 @@ export default function Home() {
                     <br />
                     July 2024 - Present
                   </p>
-                  <ul className="mt-2 list-disc space-y-2 pl-5 text-sm">
-                    <li>Built a tool for monitoring application performance and profiling resource usage at microsecond scale.</li>
-                    <li>Achieved less than 10% runtime overhead while identifying lock contention, interference, and hardware resource bottlenecks.</li>
-                    <li>Investigating memory bandwidth contention and resource demand heterogeneity.</li>
+                  <ul className="mt-3 space-y-3 pl-5 text-sm">
+                    <li className="rounded-lg bg-zinc-50 p-2.5 border border-zinc-100 shadow-sm">Built a tool for monitoring application performance and profiling resource usage at microsecond scale.</li>
+                    <li className="rounded-lg bg-zinc-50 p-2.5 border border-zinc-100 shadow-sm">Achieved less than 10% runtime overhead while identifying lock contention, interference, and hardware resource bottlenecks.</li>
+                    <li className="rounded-lg bg-zinc-50 p-2.5 border border-zinc-100 shadow-sm">Investigating memory bandwidth contention and resource demand heterogeneity.</li>
                   </ul>
                 </div>
 
@@ -110,11 +110,11 @@ export default function Home() {
                     <br />
                     June 2023 - June 2024
                   </p>
-                  <ul className="mt-2 list-disc space-y-2 pl-5 text-sm">
-                    <li>Built a Software Fault Isolation system for process-level sandboxing.</li>
-                    <li>Implemented a library OS with fast inter-process communications.</li>
-                    <li>Made benchmarks 75-200% faster than native Linux.</li>
-                    <li>Led transition to WASM runtimes and ported glibc to WASM.</li>
+                  <ul className="mt-3 space-y-3 pl-5 text-sm">
+                    <li className="rounded-lg bg-zinc-50 p-2.5 border border-zinc-100 shadow-sm">Built a Software Fault Isolation system for process-level sandboxing.</li>
+                    <li className="rounded-lg bg-zinc-50 p-2.5 border border-zinc-100 shadow-sm">Implemented a library OS with fast inter-process communications.</li>
+                    <li className="rounded-lg bg-zinc-50 p-2.5 border border-zinc-100 shadow-sm">Made benchmarks 75-200% faster than native Linux.</li>
+                    <li className="rounded-lg bg-zinc-50 p-2.5 border border-zinc-100 shadow-sm">Led transition to WASM runtimes and ported glibc to WASM.</li>
                   </ul>
                 </div>
               </div>
@@ -128,7 +128,7 @@ export default function Home() {
                   {["Go", "C", "Rust", "Python", "Java", "Coq"].map((skill) => (
                     <span
                       key={skill}
-                      className="rounded-full bg-purple-100 px-3 py-1.5 text-xs font-medium text-purple-800 border border-purple-200 shadow-sm"
+                      className="rounded-full bg-zinc-100 px-4 py-2 text-xs font-medium text-zinc-800 border border-zinc-200 shadow-sm"
                     >
                       {skill}
                     </span>
@@ -139,11 +139,11 @@ export default function Home() {
               <div className="space-y-4">
                 <div>
                   <h3 className="mb-2 font-semibold">Programming Languages</h3>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-3">
                     {["Go", "C", "Rust", "Python", "Java", "Coq"].map((skill) => (
                       <span
                         key={skill}
-                        className="rounded-full bg-purple-100 px-3.5 py-1.5 text-sm font-medium text-purple-800 border border-purple-200 shadow-sm"
+                        className="rounded-full bg-zinc-100 px-4 py-2 text-sm font-medium text-zinc-800 border border-zinc-200 shadow-sm"
                       >
                         {skill}
                       </span>
@@ -152,7 +152,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h3 className="mb-2 font-semibold">Software and Frameworks</h3>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-3">
                     {[
                       "Docker",
                       "Kubernetes",
@@ -164,7 +164,7 @@ export default function Home() {
                     ].map((skill) => (
                       <span
                         key={skill}
-                        className="rounded-full bg-blue-100 px-3.5 py-1.5 text-sm font-medium text-blue-800 border border-blue-200 shadow-sm"
+                        className="rounded-full bg-zinc-200 px-4 py-2 text-sm font-medium text-zinc-800 border border-zinc-300 shadow-sm"
                       >
                         {skill}
                       </span>
