@@ -11,19 +11,19 @@ export default function Home() {
           <div className="md:w-[30%] md:sticky md:top-8 md:self-start">
             <div className="mb-8 flex flex-col gap-4">
               {/* Namecard */}
-              <Card className="flex-grow overflow-hidden bg-gradient-to-r from-zinc-800 to-zinc-900">
+              <Card className="flex-grow overflow-hidden bg-gradient-to-r from-zinc-800 to-zinc-900 shadow-md border-none">
                 <div className="p-8 text-white">
                   <h1 className="mb-2 text-3xl font-bold">Yizhuo Liang (Coulson)</h1>
-                  <p className="text-zinc-300">Incoming PhD Student @USC</p>
+                  <p className="text-zinc-300">CS PhD Student @USC</p>
                   <div className="mt-3 flex flex-wrap gap-3 text-xs text-zinc-400">
-                    <a href="mailto:cl_488@usc.edu" className="hover:text-white">cl_488@usc.edu</a>
-                    <a href="tel:+16463397401" className="hover:text-white">+1 (646) 339 7401</a>
-                    <a href="https://github.com/yizhuoliang" className="hover:text-white">github.com/yizhuoliang</a>
+                    <a href="mailto:cl_488@usc.edu" className="hover:text-white rounded-full px-2 py-1 bg-zinc-800 hover:bg-zinc-700 transition-colors">cl_488@usc.edu</a>
+                    <a href="tel:+16463397401" className="hover:text-white rounded-full px-2 py-1 bg-zinc-800 hover:bg-zinc-700 transition-colors">+1 (646) 339 7401</a>
+                    <a href="https://github.com/yizhuoliang" className="hover:text-white rounded-full px-2 py-1 bg-zinc-800 hover:bg-zinc-700 transition-colors">github.com/yizhuoliang</a>
                   </div>
                 </div>
               </Card>
               {/* Photo */}
-              <Card className="w-full h-48 md:h-auto md:aspect-square overflow-hidden">
+              <Card className="w-full h-48 md:h-auto md:aspect-square overflow-hidden shadow-md border-none">
                 <Image
 		  src="/pics/coulson-faker.jpg"
                   alt="Yizhuo Liang"
@@ -38,8 +38,8 @@ export default function Home() {
           {/* Right column: Bio and Expandable sections */}
           <div className="md:w-[70%]">
             {/* Bio Section */}
-            <Card className="mb-8 bg-white shadow-sm">
-              <div className="p-4">
+            <Card className="mb-8 bg-white shadow-md">
+              <div className="p-5">
                 <p className="text-sm text-zinc-700 leading-relaxed">
                   Hi, I'm an incoming PhD at University of Southern California, advised by Professor Seo Jin Park. I have a broad interest of distributed and operating systems.
                 </p>
@@ -128,7 +128,7 @@ export default function Home() {
                   {["Go", "C", "Rust", "Python", "Java", "Coq"].map((skill) => (
                     <span
                       key={skill}
-                      className="rounded-full bg-zinc-100 px-2 py-1 text-xs"
+                      className="rounded-full bg-purple-100 px-3 py-1.5 text-xs font-medium text-purple-800 border border-purple-200 shadow-sm"
                     >
                       {skill}
                     </span>
@@ -143,7 +143,7 @@ export default function Home() {
                     {["Go", "C", "Rust", "Python", "Java", "Coq"].map((skill) => (
                       <span
                         key={skill}
-                        className="rounded-full bg-zinc-100 px-3 py-1 text-sm"
+                        className="rounded-full bg-purple-100 px-3.5 py-1.5 text-sm font-medium text-purple-800 border border-purple-200 shadow-sm"
                       >
                         {skill}
                       </span>
@@ -164,7 +164,7 @@ export default function Home() {
                     ].map((skill) => (
                       <span
                         key={skill}
-                        className="rounded-full bg-zinc-100 px-3 py-1 text-sm"
+                        className="rounded-full bg-blue-100 px-3.5 py-1.5 text-sm font-medium text-blue-800 border border-blue-200 shadow-sm"
                       >
                         {skill}
                       </span>

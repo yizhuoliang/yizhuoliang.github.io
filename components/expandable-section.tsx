@@ -16,10 +16,10 @@ export function ExpandableSection({ title, children, defaultExpanded = false, su
 
   return (
     <div className="mb-6">
-      <div className="rounded-lg bg-white shadow-sm">
+      <div className="rounded-2xl bg-white shadow-md">
         <button
           onClick={() => setIsExpanded(!isExpanded)}
-          className="flex w-full items-start justify-between p-4 transition-all duration-200 hover:bg-zinc-100 hover:shadow-sm group"
+          className="flex w-full items-start justify-between p-5 transition-all duration-200 hover:bg-zinc-50 rounded-2xl group"
         >
           <div className="text-left">
             <h2 className="text-xl font-semibold mb-2">{title}</h2>
@@ -35,12 +35,14 @@ export function ExpandableSection({ title, children, defaultExpanded = false, su
               </div>
             )}
           </div>
-          <ChevronDown
-            className={cn(
-              "h-6 w-6 transform transition-all duration-200 mt-1 text-zinc-400 group-hover:text-zinc-800",
-              isExpanded ? "rotate-180" : ""
-            )}
-          />
+          <div className="bg-zinc-100 rounded-full p-2 group-hover:bg-zinc-200 transition-colors">
+            <ChevronDown
+              className={cn(
+                "h-5 w-5 transform transition-all duration-200 text-zinc-500 group-hover:text-zinc-800",
+                isExpanded ? "rotate-180" : ""
+              )}
+            />
+          </div>
         </button>
         <div
           className={cn(
@@ -48,7 +50,7 @@ export function ExpandableSection({ title, children, defaultExpanded = false, su
             isExpanded ? "max-h-[2000px] opacity-100" : "max-h-0 opacity-0 border-transparent"
           )}
         >
-          <div className="p-4">{children}</div>
+          <div className="p-5 rounded-b-2xl">{children}</div>
         </div>
       </div>
     </div>
