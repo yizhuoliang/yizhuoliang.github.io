@@ -8,8 +8,8 @@ export default function Home() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 xl:max-w-6xl">
         <div className="flex flex-col md:flex-row md:gap-16">
           {/* Left column: Namecard and Photo */}
-          <div className="md:w-[30%] md:sticky md:top-8 md:self-start">
-            <div className="flex flex-col h-full">
+          <div className="md:w-[30%] md:sticky md:top-8 md:self-start relative">
+            <div className="flex flex-col">
               <div className="flex flex-col gap-8">
                 {/* Namecard */}
                 <Card className="overflow-hidden bg-gradient-to-r from-zinc-800 to-zinc-900 shadow-lg border-none">
@@ -48,8 +48,8 @@ export default function Home() {
                 </Card>
               </div>
               
-              {/* Footer with copyright */}
-              <div className="hidden md:block mt-24 mb-4 text-center text-[10px] text-zinc-400">
+              {/* Footer with copyright - desktop only */}
+              <div className="hidden md:block absolute bottom-0 left-0 right-0 mb-4 text-center text-[10px] text-zinc-400">
                 <p>© 2025 Yizhuo Liang</p>
                 <p className="mt-1">
                   Hosted on GitHub, welcome to fork my <a href="https://github.com/yizhuoliang/yizhuoliang.github.io" className="hover:text-zinc-600 transition-colors">page</a>.
@@ -64,7 +64,7 @@ export default function Home() {
             <Card className="mb-8 bg-white border border-zinc-100 dark:bg-white dark:border-zinc-100">
               <div className="p-6">
                 <p className="text-sm text-zinc-700 leading-relaxed dark:text-zinc-700">
-                  Hi, I'm an incoming PhD at <a href="https://nsl.usc.edu/" className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-zinc-100 text-zinc-800 hover:bg-zinc-200 transition-colors">USC</a>, advised by Professor <a href="https://seojinpark.net/" className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-zinc-100 text-zinc-800 hover:bg-zinc-200 transition-colors">Seo Jin Park</a>. I have a broad interest of distributed and operating systems.
+                  Hi, I'm an incoming PhD at <a href="https://nsl.usc.edu/" className="italic underline text-zinc-800 hover:text-zinc-600">USC</a>, advised by Professor <a href="https://seojinpark.net/" className="italic underline text-zinc-800 hover:text-zinc-600">Seo Jin Park</a>. I have a broad interest of distributed and operating systems.
                 </p>
               </div>
             </Card>
