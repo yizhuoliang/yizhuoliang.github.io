@@ -9,8 +9,8 @@ export default function Home() {
         <div className="flex flex-col md:flex-row md:gap-16">
           {/* Left column: Namecard and Photo */}
           <div className="md:w-[30%] md:sticky md:top-8 md:self-start">
-            <div className="flex flex-col h-full" style={{ minHeight: "calc(100vh - 6rem)" }}>
-              <div className="flex flex-col gap-8 mb-8">
+            <div className="flex flex-col md:h-full" style={{ minHeight: "0" }}>
+              <div className="flex flex-col gap-6 md:gap-8 mb-4 md:mb-8">
                 {/* Namecard */}
                 <Card className="overflow-hidden bg-gradient-to-r from-zinc-800 to-zinc-900 shadow-lg border-none">
                   <div className="p-8 text-white">
@@ -59,7 +59,7 @@ export default function Home() {
           </div>
 
           {/* Right column: Bio and Expandable sections */}
-          <div className="mt-4 md:mt-0 md:w-[70%]">
+          <div className="mt-0 md:mt-0 md:w-[70%]">
             {/* Bio Section */}
             <Card className="mb-8 bg-white border border-zinc-100 dark:bg-white dark:border-zinc-100">
               <div className="p-6">
@@ -200,7 +200,7 @@ export default function Home() {
         </div>
         
         {/* Mobile-only footer */}
-        <div className="block md:hidden mt-8 mb-4 text-center text-[10px] text-zinc-400">
+        <div className="block md:hidden mt-4 mb-4 text-center text-[10px] text-zinc-400">
           <p>© 2025 Yizhuo Liang</p>
           <p className="mt-1">
             Hosted on GitHub, welcome to fork my <a href="https://github.com/yizhuoliang/yizhuoliang.github.io" className="hover:text-zinc-600 transition-colors">page</a>.
