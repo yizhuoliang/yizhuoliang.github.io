@@ -59,7 +59,7 @@ export default function Home() {
           </div>
 
           {/* Right column: Bio and Expandable sections */}
-          <div className="md:w-[70%]">
+          <div className="mt-4 md:mt-0 md:w-[70%]">
             {/* Bio Section */}
             <Card className="mb-8 bg-white border border-zinc-100 dark:bg-white dark:border-zinc-100">
               <div className="p-6">
@@ -197,6 +197,14 @@ export default function Home() {
               </div>
             </ExpandableSection>
           </div>
+        </div>
+        
+        {/* Mobile-only footer */}
+        <div className="block md:hidden mt-8 mb-4 text-center text-[10px] text-zinc-400">
+          <p>© 2025 Yizhuo Liang</p>
+          <p className="mt-1">
+            Hosted on GitHub, welcome to fork my <a href="https://github.com/yizhuoliang/yizhuoliang.github.io" className="hover:text-zinc-600 transition-colors">page</a>.
+          </p>
         </div>
       </div>
     </main>
