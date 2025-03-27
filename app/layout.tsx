@@ -2,20 +2,30 @@ import type { Metadata } from "next"
 import localFont from 'next/font/local'
 import "./globals.css"
 
-const mapleMono = localFont({
+const jetbrainsMono = localFont({
   src: [
     {
-      path: '../public/fonts/MapleMono-TTF/MapleMono-Regular.ttf',
+      path: '../public/fonts/JetBrainsMono/webfonts/JetBrainsMono-Regular.woff2',
       weight: '400',
       style: 'normal',
     },
     {
-      path: '../public/fonts/MapleMono-TTF/MapleMono-Bold.ttf',
+      path: '../public/fonts/JetBrainsMono/webfonts/JetBrainsMono-Bold.woff2',
       weight: '700',
       style: 'normal',
+    },
+    {
+      path: '../public/fonts/JetBrainsMono/webfonts/JetBrainsMono-Italic.woff2',
+      weight: '400',
+      style: 'italic',
+    },
+    {
+      path: '../public/fonts/JetBrainsMono/webfonts/JetBrainsMono-BoldItalic.woff2',
+      weight: '700',
+      style: 'italic',
     }
   ],
-  variable: '--font-maple-mono'
+  variable: '--font-jetbrains-mono'
 })
 
 export const metadata: Metadata = {
@@ -30,7 +40,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${mapleMono.variable} font-mono bg-zinc-100 text-zinc-900`}>
+      <body className={`${jetbrainsMono.variable} font-mono bg-zinc-100 text-zinc-900`}>
         {children}
       </body>
     </html>
