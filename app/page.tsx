@@ -4,7 +4,7 @@ import { ExpandableSection } from "@/components/expandable-section"
 
 export default function Home() {
   return (
-    <main className="min-h-screen p-4 md:p-8 bg-zinc-100 dark:bg-zinc-100">
+    <main className="min-h-screen p-4 pb-2 md:p-8 md:pb-4 bg-zinc-100 dark:bg-zinc-100">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 xl:max-w-6xl">
         <div className="flex flex-col md:flex-row md:gap-16">
           {/* Left column: Namecard and Photo */}
@@ -48,7 +48,7 @@ export default function Home() {
             </div>
             
             {/* Footer with copyright - desktop only */}
-            <div className="hidden md:block text-center text-[10px] text-zinc-400 mb-4">
+            <div className="hidden md:block text-center text-[10px] text-zinc-400 mb-2">
               <p>© 2025 Yizhuo Liang</p>
               <p className="mt-1">
                 Hosted on GitHub, welcome to fork my <a href="https://github.com/yizhuoliang/yizhuoliang.github.io" className="hover:text-zinc-600 transition-colors">page</a>.
@@ -198,7 +198,7 @@ export default function Home() {
         </div>
         
         {/* Mobile-only footer */}
-        <div className="block md:hidden mt-8 mb-4 text-center text-[10px] text-zinc-400">
+        <div className="block md:hidden mt-8 mb-2 text-center text-[10px] text-zinc-400">
           <p>© 2025 Yizhuo Liang</p>
           <p className="mt-1">
             Hosted on GitHub, welcome to fork my <a href="https://github.com/yizhuoliang/yizhuoliang.github.io" className="hover:text-zinc-600 transition-colors">page</a>.
