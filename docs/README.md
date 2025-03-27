@@ -2,8 +2,6 @@
 
 A clean, minimal portfolio theme built with Next.js and Tailwind CSS. Perfect for academics, researchers, or developers who want a simple yet elegant way to showcase their work.
 
-Developed with Cursor! It's amazing!
-
 ## Features
 
 - **Clean Minimal Design**: Focus on content with a distraction-free design
@@ -49,16 +47,16 @@ This site is configured for deployment to GitHub Pages through GitHub Actions. F
 
 ## Customization
 
-See the [customization guide](./docs/CUSTOMIZATION.md) for detailed instructions on personalizing the theme.
+See the [customization guide](./CUSTOMIZATION.md) for detailed instructions on personalizing the theme.
 
-For information about the project structure, see the [project structure documentation](./docs/PROJECT_STRUCTURE.md).
+For information about the project structure, see the [project structure documentation](./PROJECT_STRUCTURE.md).
 
 ## License
 
-This project is open source and available under the [MIT License](./LICENSE).
+This project is open source and available under the [MIT License](../LICENSE).
 
 ## Acknowledgments
 
 - Built with [Next.js](https://nextjs.org/)
 - Styled with [Tailwind CSS](https://tailwindcss.com/)
-- Icons from [Lucide](https://lucide.dev/)
+- Icons from [Lucide](https://lucide.dev/) 
