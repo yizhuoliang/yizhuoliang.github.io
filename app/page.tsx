@@ -25,6 +25,7 @@ export default function Home() {
                   alt="Yizhuo Liang"
                   width={400}
                   height={400}
+                  priority
                   className="object-cover w-full h-full transition-transform hover:scale-105 duration-300"
                 />
               </Card>
