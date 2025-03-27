@@ -9,12 +9,12 @@ export default function Home() {
         <div className="flex flex-col md:flex-row md:gap-16">
           {/* Left column: Namecard and Photo */}
           <div className="md:w-[30%] md:sticky md:top-8 md:self-start flex flex-col justify-between md:min-h-[calc(100vh-6rem)]">
-            <div className="flex flex-col gap-8 mb-4">
+            <div className="flex flex-col gap-8 mb-8">
               {/* Namecard */}
               <Card className="overflow-hidden bg-gradient-to-r from-zinc-800 to-zinc-900 shadow-lg border-none">
                 <div className="p-8 text-white">
                   <h1 className="mb-2 text-3xl font-bold">Yizhuo Liang (Coulson)</h1>
-                  <p className="text-zinc-300">CS PhD Student @USC</p>
+                  <p className="text-zinc-300">CS Ph.D. Student @USC</p>
                 </div>
               </Card>
               
