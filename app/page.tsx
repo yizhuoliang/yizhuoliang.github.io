@@ -201,7 +201,7 @@ export default function Home() {
         <div className="block md:hidden mt-8 mb-2 text-center text-[10px] text-zinc-400">
           <p>© 2025 Yizhuo Liang</p>
           <p className="mt-1">
-            Hosted on GitHub, welcome to fork my <a href="https://github.com/yizhuoliang/yizhuoliang.github.io" className="hover:text-zinc-600 transition-colors">page</a>.
+          Welcome to fork my <a href="https://github.com/yizhuoliang/yizhuoliang.github.io" className="hover:text-zinc-600 transition-colors">theme</a>!
           </p>
         </div>
       </div>
