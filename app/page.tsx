@@ -9,7 +9,7 @@ export default function Home() {
         <div className="flex flex-col md:flex-row md:gap-16">
           {/* Left column: Namecard and Photo */}
           <div className="md:w-[30%] md:sticky md:top-8 md:self-start flex flex-col justify-between md:min-h-[calc(100vh-6rem)]">
-            <div className="flex flex-col gap-8 mb-8">
+            <div className="flex flex-col gap-8 mb-4">
               {/* Namecard */}
               <Card className="overflow-hidden bg-gradient-to-r from-zinc-800 to-zinc-900 shadow-lg border-none">
                 <div className="p-8 text-white">
