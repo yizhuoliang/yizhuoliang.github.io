@@ -78,13 +78,22 @@ export default function Home() {
               defaultExpanded={false}
               summary={
                 <div className="space-y-1">
-                  <p className="font-semibold">New York University</p>
+                  <p className="font-semibold">University of Southern California</p>
+                  <p>Ph.D. in Computer Science</p>
+                  <p className="text-xs mt-1">September 2025 - Present</p>
+                  <p className="font-semibold mt-3">New York University</p>
                   <p>B.A. in Computer Science with honors, Minor in Mathematics</p>
                   <p className="text-xs mt-1">January 2021 - May 2024</p>
                 </div>
               }
             >
               <div className="space-y-4">
+                <div className="space-y-2">
+                  <p className="font-semibold">University of Southern California</p>
+                  <p>Ph.D. in Computer Science</p>
+                  <p className="text-xs mt-1">September 2025 - Present</p>
+                </div>
+
                 <div className="space-y-2">
                   <p className="font-semibold">New York University</p>
                   <p>B.A. in Computer Science with honors, Minor in Mathematics</p>
@@ -101,46 +110,62 @@ export default function Home() {
               </div>
             </ExpandableSection>
 
-            {/* Research Projects Section */}
+            {/* Experience */}
             <ExpandableSection 
-              title="Research Projects"
+              title="Experience"
               defaultExpanded={true}
               summary={
                 <div className="space-y-1">
-                  <p>• High-resolution Application Profiling</p>
-                  <p>• Efficient Software Fault Isolation for the Cloud</p>
+                  <p>• Full-time Research Intern @ USC Networked Systems Lab</p>
+                  <p>• Undergraduate Researcher @ NYU Secure Systems Lab</p>
                 </div>
               }
             >
               <div className="space-y-8">
                 {/* USC Research */}
                 <div>
-                  <h3 className="text-lg font-semibold">High-resolution Application Profiling</h3>
+                  <h3 className="text-lg font-semibold">Full-time Research Intern @ USC Networked Systems Lab</h3>
                   <p className="text-sm text-zinc-600">
-                    Full-time Research Intern, Networked Systems Lab, University of Southern California
-                    <br />
-                    July 2024 - Present
+                    July 2024 - May 2025
                   </p>
                   <ul className="mt-3 space-y-3 pl-5 text-sm">
-                    <ProjectItem>Built a tool for monitoring application performance and profiling resource usage at microsecond scale.</ProjectItem>
-                    <ProjectItem>Achieved less than 10% runtime overhead while identifying lock contention, interference, and hardware resource bottlenecks.</ProjectItem>
-                    <ProjectItem>Investigating memory bandwidth contention and resource demand heterogeneity.</ProjectItem>
+                    <ProjectItem>High-resolution, low-overhead application profiling and resource demand heterogeneity.</ProjectItem>
+                    <ProjectItem>Preliminary research on massive-parallel, burst-compatible cloud infrastructure.</ProjectItem>
                   </ul>
                 </div>
 
                 {/* NYU SSL Research */}
                 <div>
-                  <h3 className="text-lg font-semibold">Efficient Software Fault Isolation for the Cloud</h3>
+                  <h3 className="text-lg font-semibold">Undergraduate Researcher @ NYU Secure Systems Lab</h3>
                   <p className="text-sm text-zinc-600">
-                    Research Assistant, Secure Systems Lab, NYU
-                    <br />
                     June 2023 - June 2024
                   </p>
                   <ul className="mt-3 space-y-3 pl-5 text-sm">
-                    <ProjectItem>Built a Software Fault Isolation system for process-level sandboxing.</ProjectItem>
-                    <ProjectItem>Implemented a library OS with fast inter-process communications.</ProjectItem>
-                    <ProjectItem>Made benchmarks 75-200% faster than native Linux.</ProjectItem>
-                    <ProjectItem>Led transition to WASM runtimes and ported glibc to WASM.</ProjectItem>
+                    <ProjectItem>Efficient and secure software fault isolation for the cloud. Contributions made IPC benchmarks 75-200% faster than native Linux.</ProjectItem>
+                    <ProjectItem>Adoption of WASM runtimes and porting glibc to WASM.</ProjectItem>
+                  </ul>
+                </div>
+              </div>
+            </ExpandableSection>
+
+            {/* Publications Section */}
+            <ExpandableSection 
+              title="Publications"
+              defaultExpanded={true}
+              summary={
+                <div className="space-y-1">
+                  <p>• Granular Resource Demand Heterogeneity (HotOS '25)</p>
+                </div>
+              }
+            >
+              <div className="space-y-4">
+                <div>
+                  <ul className="mt-3 space-y-3 pl-5 text-sm">
+                    <ProjectItem>
+                      <span className="font-medium">Granular Resource Demand Heterogeneity</span> <span className="text-zinc-500">(To Appear)</span><br />
+                      Yizhuo Liang, Ramesh Govindan, Seo Jin Park<br />
+                      The 20th Workshop on Hot Topics in Operating Systems (HotOS '25), May 2025
+                    </ProjectItem>
                   </ul>
                 </div>
               </div>
