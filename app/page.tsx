@@ -67,7 +67,7 @@ export default function Home() {
             <Card className="mb-8 bg-white border border-zinc-100 dark:bg-white dark:border-zinc-100">
               <div className="p-6">
                 <p className="text-sm text-zinc-700 leading-relaxed dark:text-zinc-700">
-                  Hi, I'm an incoming PhD at <StyledLink href="https://nsl.usc.edu/" variant="underline">University of Southern California</StyledLink>, advised by Professor <StyledLink href="https://seojinpark.net/" variant="underline">Seo Jin Park</StyledLink>. I have a broad interest of distributed and operating systems.
+                  Hi, I'm an incoming PhD at <StyledLink href="https://nsl.usc.edu/" variant="underline">USC</StyledLink>, advised by Professor <StyledLink href="https://seojinpark.net/" variant="underline">Seo Jin Park</StyledLink>. I have a broad interest of distributed and operating systems.
                 </p>
               </div>
             </Card>
@@ -90,13 +90,13 @@ export default function Home() {
               <div className="space-y-4">
                 <div className="space-y-2">
                   <p className="font-semibold">University of Southern California</p>
-                  <p>Ph.D. in Computer Science</p>
+                  <p className="font-semibold text-xs">Ph.D. in Computer Science</p>
                   <p className="text-xs mt-1">September 2025 - Present</p>
                 </div>
 
                 <div className="space-y-2">
                   <p className="font-semibold">New York University</p>
-                  <p>B.A. in Computer Science with honors, Minor in Mathematics</p>
+                  <p className="font-semibold text-xs">B.A. in Computer Science with honors, Minor in Mathematics</p>
                   <p className="text-xs mt-1">January 2021 - May 2024</p>
                   <p>GPA: 3.866/4.0</p>
                   <p className="text-sm">
@@ -113,18 +113,22 @@ export default function Home() {
             {/* Experience */}
             <ExpandableSection 
               title="Experience"
-              defaultExpanded={true}
+              defaultExpanded={false}
               summary={
                 <div className="space-y-1">
-                  <p>• Full-time Research Intern @ USC Networked Systems Lab</p>
-                  <p>• Undergraduate Researcher @ NYU Secure Systems Lab</p>
+                  <p className="font-semibold">USC Networked Systems Lab</p>
+                  <p>Full-time Research Intern</p>
+                  <p className="text-xs mt-1">July 2024 - May 2025</p>
+                  <p className="font-semibold mt-3">NYU Secure Systems Lab</p>
+                  <p>Undergraduate Researcher</p>
+                  <p className="text-xs mt-1">June 2023 - June 2024</p>
                 </div>
               }
             >
               <div className="space-y-8">
                 {/* USC Research */}
                 <div>
-                  <h3 className="text-lg font-semibold">Full-time Research Intern @ USC Networked Systems Lab</h3>
+                  <h3 className="text-lg font-semibold">Full-time Research Intern at USC Networked Systems Lab</h3>
                   <p className="text-sm text-zinc-600">
                     July 2024 - May 2025
                   </p>
@@ -136,7 +140,7 @@ export default function Home() {
 
                 {/* NYU SSL Research */}
                 <div>
-                  <h3 className="text-lg font-semibold">Undergraduate Researcher @ NYU Secure Systems Lab</h3>
+                  <h3 className="text-lg font-semibold">Undergraduate Researcher at NYU Secure Systems Lab</h3>
                   <p className="text-sm text-zinc-600">
                     June 2023 - June 2024
                   </p>
@@ -151,19 +155,20 @@ export default function Home() {
             {/* Publications Section */}
             <ExpandableSection 
               title="Publications"
-              defaultExpanded={true}
+              defaultExpanded={false}
               summary={
                 <div className="space-y-1">
-                  <p>• Granular Resource Demand Heterogeneity (HotOS '25)</p>
+                  <p>Granular Resource Demand Heterogeneity (HotOS '25)</p>
+                  <p className="text-xs mt-1"><strong>Yizhuo Liang</strong>, Ramesh Govindan, Seo Jin Park</p>
                 </div>
               }
             >
               <div className="space-y-4">
                 <div>
-                  <ul className="mt-3 space-y-3 pl-5 text-sm">
+                  <ul className="mt-3 space-y-3 pl-5 text-xs">
                     <ProjectItem>
                       <span className="font-medium">Granular Resource Demand Heterogeneity</span> <span className="text-zinc-500">(To Appear)</span><br />
-                      Yizhuo Liang, Ramesh Govindan, Seo Jin Park<br />
+                      <strong>Yizhuo Liang</strong>, Ramesh Govindan, Seo Jin Park<br />
                       The 20th Workshop on Hot Topics in Operating Systems (HotOS '25), May 2025
                     </ProjectItem>
                   </ul>
