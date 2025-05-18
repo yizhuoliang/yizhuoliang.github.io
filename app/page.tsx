@@ -41,9 +41,9 @@ export default function Home() {
                   <div className="space-y-1.5">
                     <ContactItem 
                       icon={<EmailIcon />} 
-                      href="mailto:cl_488@usc.edu"
+                      href="mailto:yizhuoli@usc.edu"
                     >
-                      cl_488@usc.edu
+                      yizhuoli@usc.edu
                     </ContactItem>
                     
                     <ContactItem 
@@ -167,7 +167,7 @@ export default function Home() {
                 <div>
                   <ul className="mt-3 space-y-3 pl-5 text-xs">
                     <ProjectItem>
-                      <span className="font-medium">Granular Resource Demand Heterogeneity</span> <span className="text-zinc-500">(To Appear)</span><br />
+                      <span className="font-medium">Granular Resource Demand Heterogeneity</span> <br />
                       <strong>Yizhuo Liang</strong>, Ramesh Govindan, Seo Jin Park<br />
                       The 20th Workshop on Hot Topics in Operating Systems (HotOS '25), May 2025
                     </ProjectItem>
