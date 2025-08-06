@@ -31,6 +31,9 @@ const jetbrainsMono = localFont({
 export const metadata: Metadata = {
   title: "Yizhuo Liang - Computer Science Researcher",
   description: "Personal website of Yizhuo Liang, featuring research work and experience in computer science",
+  verification: {
+    google: "VC0wI7gYwY23H9Wq0mSdztu9HCarZs6eCjt2Gc9HjYw",
+  },
 }
 
 export default function RootLayout({
