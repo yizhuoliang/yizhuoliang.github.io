@@ -78,10 +78,10 @@ export default function Home() {
               defaultExpanded={false}
               summary={
                 <div className="space-y-1">
-                  <p className="font-semibold">University of Southern California</p>
+                  <p className="font-semibold text-[#990000]">University of Southern California</p>
                   <p>Ph.D. in Computer Science</p>
                   <p className="text-xs mt-1">August 2025 - Present</p>
-                  <p className="font-semibold mt-3">New York University</p>
+                  <p className="font-semibold mt-3 text-[#57068c]">New York University</p>
                   <p>B.A. in Computer Science with honors, Minor in Mathematics</p>
                   <p className="text-xs mt-1">January 2021 - May 2024</p>
                 </div>
