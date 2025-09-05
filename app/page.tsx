@@ -67,7 +67,7 @@ export default function Home() {
             <Card className="mb-8 bg-white border border-zinc-100 dark:bg-white dark:border-zinc-100">
               <div className="p-6">
                 <p className="text-sm text-zinc-700 leading-relaxed dark:text-zinc-700">
-                  Hi, I'm an incoming PhD at <StyledLink href="https://nsl.usc.edu/" variant="underline">USC</StyledLink>, advised by Professor <StyledLink href="https://seojinpark.net/" variant="underline">Seo Jin Park</StyledLink>. I have a broad interest of distributed and operating systems.
+                  Hi, I'm a PhD student at <StyledLink href="https://nsl.usc.edu/" variant="underline">USC</StyledLink>, advised by Professor <StyledLink href="https://seojinpark.net/" variant="underline">Seo Jin Park</StyledLink>. I have a broad interest indistributed and operating systems. I also build systems for more efficient LLM inference.
                 </p>
               </div>
             </Card>
@@ -80,7 +80,7 @@ export default function Home() {
                 <div className="space-y-1">
                   <p className="font-semibold">University of Southern California</p>
                   <p>Ph.D. in Computer Science</p>
-                  <p className="text-xs mt-1">September 2025 - Present</p>
+                  <p className="text-xs mt-1">August 2025 - Present</p>
                   <p className="font-semibold mt-3">New York University</p>
                   <p>B.A. in Computer Science with honors, Minor in Mathematics</p>
                   <p className="text-xs mt-1">January 2021 - May 2024</p>
