@@ -4,21 +4,24 @@ import React from 'react'
 import Image from 'next/image'
 import { useState } from 'react'
 import { ChevronDown } from 'lucide-react'
+import Link from 'next/link'
 import { cn } from "@/lib/utils"
 import { Card } from "@/components/ui/card"
 
 // Styled link with consistent styling
 export const StyledLink = React.forwardRef<
   HTMLAnchorElement,
-  React.AnchorHTMLAttributes<HTMLAnchorElement> & { variant?: 'underline' | 'plain' }
+  React.AnchorHTMLAttributes<HTMLAnchorElement> & { variant?: 'underline' | 'plain' | 'muted' }
 >(({ className = "", variant = 'plain', ...props }, ref) => (
   <a
     ref={ref}
     className={cn(
       "transition-colors",
-      variant === 'underline' 
-        ? "underline text-zinc-800 hover:text-zinc-600 dark:text-zinc-800 dark:hover:text-zinc-600" 
-        : "text-zinc-800 hover:text-zinc-600 dark:text-zinc-800 dark:hover:text-zinc-600",
+      variant === 'underline'
+        ? "underline text-zinc-800 hover:text-zinc-600 dark:text-zinc-800 dark:hover:text-zinc-600"
+        : variant === 'muted'
+          ? "text-zinc-400 hover:text-zinc-600 dark:text-zinc-400 dark:hover:text-zinc-600"
+          : "text-zinc-800 hover:text-zinc-600 dark:text-zinc-800 dark:hover:text-zinc-600",
       className
     )}
     {...props}
@@ -90,6 +93,16 @@ export function GithubIcon() {
     <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5 text-zinc-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
       <path d="M9 18c-4.51 2-5-2-7-2"/>
+    </svg>
+  );
+}
+
+// Scholar icon (graduation cap)
+export function ScholarIcon() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5 text-zinc-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M22 10L12 4 2 10l10 6 10-6" />
+      <path d="M6 12v5c0 1.7 3.6 3 6 3s6-1.3 6-3v-5" />
     </svg>
   );
 }
@@ -190,3 +203,32 @@ export function ExpandableSection({ title, children, defaultExpanded = false, su
     </div>
   )
 } 
+
+// Link Section (non-expandable, arrow points right)
+interface LinkSectionProps {
+  title: string
+  href: string
+  description?: React.ReactNode
+}
+
+export function LinkSection({ title, href, description }: LinkSectionProps) {
+  return (
+    <div className="mb-8">
+      <div className="rounded-3xl bg-white border border-zinc-100 dark:bg-white dark:border-zinc-100">
+        <Link href={href} className="flex w-full items-start justify-between p-6 transition-all duration-200 hover:bg-zinc-50 dark:hover:bg-zinc-50 rounded-3xl group">
+          <div className="text-left">
+            <h2 className="text-2xl font-bold mb-1 text-zinc-900 dark:text-zinc-900">{title}</h2>
+            {description && (
+              <div className="text-sm text-zinc-600 dark:text-zinc-600">
+                {description}
+              </div>
+            )}
+          </div>
+          <div className="bg-zinc-100 dark:bg-zinc-100 rounded-full p-2.5 group-hover:bg-zinc-200 dark:group-hover:bg-zinc-200 transition-colors">
+            <ChevronDown className="h-5 w-5 -rotate-90 transition-all duration-200 text-zinc-500 dark:text-zinc-500 group-hover:text-zinc-800 dark:group-hover:text-zinc-800" />
+          </div>
+        </Link>
+      </div>
+    </div>
+  )
+}

@@ -7,6 +7,7 @@ import {
   ContactItem,
   EmailIcon,
   GithubIcon, 
+  ScholarIcon,
   Footer,
   SkillTag,
   ProjectItem
@@ -51,6 +52,13 @@ export default function Home() {
                       href="https://github.com/yizhuoliang"
                     >
                       github.com/yizhuoliang
+                    </ContactItem>
+
+                    <ContactItem 
+                      icon={<ScholarIcon />} 
+                      href="https://scholar.google.com/citations?user=86jYY2MAAAAJ&hl=en&oi=ao"
+                    >
+                      Google Scholar
                     </ContactItem>
                   </div>
                 </div>
@@ -116,11 +124,13 @@ export default function Home() {
               defaultExpanded={false}
               summary={
                 <div className="space-y-1">
-                  <p className="font-semibold">USC Networked Systems Lab</p>
-                  <p>Full-time Research Intern</p>
+                  <p>
+                    <span className="font-semibold">USC Networked Systems Lab</span> — <span>Full-time Research Intern</span>
+                  </p>
                   <p className="text-xs mt-1">July 2024 - May 2025</p>
-                  <p className="font-semibold mt-3">NYU Secure Systems Lab</p>
-                  <p>Undergraduate Researcher</p>
+                  <p className="mt-3">
+                    <span className="font-semibold">NYU Secure Systems Lab</span> — <span>Undergraduate Researcher</span>
+                  </p>
                   <p className="text-xs mt-1">June 2023 - June 2024</p>
                 </div>
               }
@@ -158,7 +168,7 @@ export default function Home() {
               defaultExpanded={false}
               summary={
                 <div className="space-y-1">
-                  <p>Granular Resource Demand Heterogeneity (HotOS '25)</p>
+                  <p>Granular Resource Demand Heterogeneity (HotOS'25)</p>
                   <p className="text-xs mt-1"><strong>Yizhuo Liang</strong>, Ramesh Govindan, Seo Jin Park</p>
                 </div>
               }
@@ -214,6 +224,13 @@ export default function Home() {
                 </div>
               </div>
             </ExpandableSection>
+
+            {/* Subtle More About Me link - centered */}
+            <div className="mt-8 flex justify-center">
+              <StyledLink href="/about" variant="muted" className="text-sm">
+                More about me?
+              </StyledLink>
+            </div>
           </div>
         </div>
         
