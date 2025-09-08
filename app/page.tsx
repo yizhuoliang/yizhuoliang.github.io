@@ -15,7 +15,7 @@ import {
 export default function Home() {
   return (
     <main className="min-h-screen p-4 pb-2 md:p-8 md:pb-4 bg-zinc-100 dark:bg-zinc-100">
-      <div className="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:gap-16">
           {/* Left column: Namecard and Photo */}
           <div className="md:w-[30%] md:sticky md:top-8 md:self-start flex flex-col justify-between md:min-h-[calc(100vh-6rem)]">
