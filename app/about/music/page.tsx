@@ -9,7 +9,7 @@ export default function MusicPage() {
             Back to About
           </Link>
         </div>
-        <h1 className="text-2xl font-semibold mb-6">Music I love</h1>
+        <h1 className="text-2xl font-semibold mb-8">Music I love</h1>
 
         <div className="flex flex-col gap-16">
 

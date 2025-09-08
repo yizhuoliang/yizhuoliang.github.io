@@ -25,7 +25,8 @@ const jetbrainsMono = localFont({
       style: 'italic',
     }
   ],
-  variable: '--font-jetbrains-mono'
+  variable: '--font-jetbrains-mono',
+  display: 'block'
 })
 
 export const metadata: Metadata = {

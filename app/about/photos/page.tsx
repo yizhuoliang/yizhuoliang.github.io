@@ -9,7 +9,11 @@ export default function PhotosPage() {
             Back to About
           </Link>
         </div>
-        <h1 className="text-2xl font-semibold mb-6">My Photos</h1>
+        <h1 className="text-2xl font-semibold mb-8">My Photos</h1>
+
+        <div className="md:w-1/3 text-sm text-zinc-700 mb-8">
+              <p>Yes, that thing is my logo.</p>
+        </div>
 
         <div className="flex flex-col gap-16">
           <div className="flex flex-col md:flex-row gap-8 items-start">

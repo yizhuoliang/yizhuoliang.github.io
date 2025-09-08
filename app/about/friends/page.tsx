@@ -10,7 +10,7 @@ export default function FriendsPage() {
             Back to About
           </Link>
         </div>
-        <h1 className="text-2xl font-semibold mb-6">My friends</h1>
+        <h1 className="text-2xl font-semibold mb-8">My friends</h1>
         <p className="text-lg">You are, my friend :)</p>
       </div>
     </main>
