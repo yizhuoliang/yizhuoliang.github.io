@@ -27,7 +27,7 @@ export default function About() {
           }
           <div className="mt-0 md:mt-0 md:w-[70%]">
             <div className="mb-8">
-              <img src="/pics/about.png" alt="About Coulson" className="w-full h-auto rounded-3xl" />
+              <img src="/pics/about.jpg" alt="About Coulson" className="w-full h-auto rounded-3xl" />
             </div>
             <LinkSection title="1" description="My Photos" href="/about/photos" />
             <LinkSection title="2" description="Music I Love" href="/about/music" />
