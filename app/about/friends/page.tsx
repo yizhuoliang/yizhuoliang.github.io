@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Card } from "@/components/ui/card"
+import GithubComments from '@/components/GithubComments'
 
 export default function FriendsPage() {
   return (
@@ -11,10 +11,9 @@ export default function FriendsPage() {
           </Link>
         </div>
         <h1 className="text-2xl font-semibold mb-8">My friends</h1>
-        <p className="text-lg">You are, my friend :)</p>
+        <p className="text-lg mb-8">You are, my friend :)</p>
+        <GithubComments />
       </div>
     </main>
   )
 }
-
-
