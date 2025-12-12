@@ -17,10 +17,10 @@ export default function GithubComments() {
           categoryId="DIC_kwDONk8UTM4CzsPi"
           mapping="pathname"
           strict="0"
-          reactionsEnabled="1"
+          reactionsEnabled="0"
           emitMetadata="0"
           inputPosition="bottom"
-          theme="preferred_color_scheme"
+          theme="light"
           lang="en"
           loading="lazy"
         />
