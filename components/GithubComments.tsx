@@ -9,21 +9,22 @@ export default function GithubComments() {
       <p className="text-sm text-zinc-600 mb-4">
         Sign in with GitHub to leave a comment.
       </p>
-      <script src="https://giscus.app/client.js"
-        data-repo="yizhuoliang/yizhuoliang.github.io"
-        data-repo-id="R_kgDONk8UTA"
-        data-category="General"
-        data-category-id="DIC_kwDONk8UTM4CzsPi"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="en"
-        crossOrigin="anonymous"
-        async>
-      </script>
+      <div className="border border-zinc-300 rounded-lg bg-white p-2 sm:p-4">
+        <Giscus
+          repo="yizhuoliang/yizhuoliang.github.io"
+          repoId="R_kgDONk8UTA"
+          category="General"
+          categoryId="DIC_kwDONk8UTM4CzsPi"
+          mapping="pathname"
+          strict="0"
+          reactionsEnabled="1"
+          emitMetadata="0"
+          inputPosition="bottom"
+          theme="preferred_color_scheme"
+          lang="en"
+          loading="lazy"
+        />
+      </div>
     </section>
   )
 }
