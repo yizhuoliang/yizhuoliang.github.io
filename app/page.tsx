@@ -168,9 +168,9 @@ export default function Home() {
               defaultExpanded={false}
               summary={
                 <div className="space-y-1">
-                  <p className="font-medium">Cornserve: Efficiently Serving Any-to-Any Multimodal Models (Preprint)</p>
+                  <p className="font-medium"><strong>Cornserve: Efficiently Serving Any-to-Any Multimodal Models (Preprint)</strong></p>
                   <p className="text-xs mt-1">Jeff J. Ma, Jae-Won Chung, Jisang Ahn, <strong>Yizhuo Liang</strong>, Akshay Jajoo, Myungjin Lee, Mosharaf Chowdhury</p>
-                  <p className="mt-1 font-medium">Granular Resource Demand Heterogeneity (HotOS'25)</p>
+                  <p className="mt-1 font-medium"><strong>Granular Resource Demand Heterogeneity (HotOS'25)</strong></p>
                   <p className="text-xs mt-1"><strong>Yizhuo Liang</strong>, Ramesh Govindan, Seo Jin Park</p>
                 </div>
               }
