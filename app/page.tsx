@@ -168,6 +168,8 @@ export default function Home() {
               defaultExpanded={false}
               summary={
                 <div className="space-y-1">
+                  <p>Cornserve: Efficiently Serving Any-to-Any Multimodal Models (Preprint)</p>
+                  <p className="text-xs mt-1">Jeff J. Ma, Jae-Won Chung, Jisang Ahn, <strong>Yizhuo Liang</strong>, Akshay Jajoo, Myungjin Lee, Mosharaf Chowdhury</p>
                   <p>Granular Resource Demand Heterogeneity (HotOS'25)</p>
                   <p className="text-xs mt-1"><strong>Yizhuo Liang</strong>, Ramesh Govindan, Seo Jin Park</p>
                 </div>
@@ -177,7 +179,18 @@ export default function Home() {
                 <div>
                   <ul className="mt-3 space-y-3 pl-5 text-xs">
                     <ProjectItem>
-                      <span className="font-medium">Granular Resource Demand Heterogeneity</span> <br />
+                      <StyledLink href="https://arxiv.org/abs/2512.14098" variant="underline" className="font-medium">
+                        Cornserve: Efficiently Serving Any-to-Any Multimodal Models
+                      </StyledLink>{" "}
+                      <br />
+                      Jeff J. Ma, Jae-Won Chung, Jisang Ahn, <strong>Yizhuo Liang</strong>, Akshay Jajoo, Myungjin Lee, Mosharaf Chowdhury<br />
+                      <StyledLink href="https://arxiv.org/abs/2512.14098" variant="underline">arXiv:2512.14098</StyledLink> (Preprint), Dec 2025
+                    </ProjectItem>
+                    <ProjectItem>
+                      <StyledLink href="https://dl.acm.org/doi/10.1145/3713082.3730379" variant="underline" className="font-medium">
+                        Granular Resource Demand Heterogeneity
+                      </StyledLink>{" "}
+                      <br />
                       <strong>Yizhuo Liang</strong>, Ramesh Govindan, Seo Jin Park<br />
                       The 20th Workshop on Hot Topics in Operating Systems (HotOS '25), May 2025
                     </ProjectItem>
