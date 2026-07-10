@@ -9,7 +9,6 @@ import {
   GithubIcon, 
   ScholarIcon,
   Footer,
-  SkillTag,
   ProjectItem
 } from "@/components/ui/shared-components"
 
@@ -239,7 +238,8 @@ export default function Home() {
             </ExpandableSection>
 
             {/* Skills Section */}
-            <ExpandableSection 
+            {/*
+            <ExpandableSection
               title="Skills"
               summary={
                 <div className="flex flex-wrap gap-2">
@@ -276,6 +276,7 @@ export default function Home() {
                 </div>
               </div>
             </ExpandableSection>
+            */}
 
             {/* Subtle More About Me link - centered */}
             <div className="mt-8 flex justify-center">
