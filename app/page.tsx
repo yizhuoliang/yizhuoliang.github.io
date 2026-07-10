@@ -125,6 +125,10 @@ export default function Home() {
               summary={
                 <div className="space-y-1">
                   <p>
+                    <span className="font-semibold">ByteDance</span> — <span>Research Intern</span>
+                  </p>
+                  <p className="text-xs mt-1">May 2026 - August 2026</p>
+                  <p className="mt-3">
                     <span className="font-semibold">USC Networked Systems Lab</span> — <span>Full-time Research Intern</span>
                   </p>
                   <p className="text-xs mt-1">July 2024 - May 2025</p>
@@ -136,6 +140,17 @@ export default function Home() {
               }
             >
               <div className="space-y-8">
+                {/* ByteDance Research */}
+                <div>
+                  <h3 className="text-lg font-semibold">Research Intern at ByteDance</h3>
+                  <p className="text-sm text-zinc-600">
+                    May 2026 - August 2026
+                  </p>
+                  <ul className="mt-3 space-y-3 pl-5 text-sm">
+                    <ProjectItem>Optimizing batch inference system.</ProjectItem>
+                  </ul>
+                </div>
+
                 {/* USC Research */}
                 <div>
                   <h3 className="text-lg font-semibold">Full-time Research Intern at USC Networked Systems Lab</h3>
@@ -168,17 +183,34 @@ export default function Home() {
               defaultExpanded={false}
               summary={
                 <div className="space-y-1">
-                  <p className="font-medium"><strong>Cornserve: Efficiently Serving Any-to-Any Multimodal Models (Preprint)</strong></p>
-                  <p className="text-xs mt-1">Jeff J. Ma, Jae-Won Chung, Jisang Ahn, <strong>Yizhuo Liang</strong>, Akshay Jajoo, Myungjin Lee, Mosharaf Chowdhury</p>
+                  <p className="font-medium"><strong>Democratizing MoE LLM Decoding via Barrier-Free Expert Parallelism (SOSP'26)</strong></p>
+                  <p className="text-xs mt-1"><strong>Yizhuo Liang*</strong>, Shaoyu Wang*, Jaeyong Song, Yanqi Zhou, Geon-Woo Kim, Guangrong He, Seo Jin Park</p>
                   <div className="h-3" />
-                  <p className="font-medium"><strong>Granular Resource Demand Heterogeneity (HotOS'25)</strong></p>
-                  <p className="text-xs mt-1"><strong>Yizhuo Liang</strong>, Ramesh Govindan, Seo Jin Park</p>
+                  <p className="font-medium"><strong>Moebius: Serving Mixture-of-Expert Models with Seamless Runtime Parallelism Switch (Preprint)</strong></p>
+                  <p className="text-xs mt-1">Shaoyu Wang, <strong>Yizhuo Liang</strong>, Jaeyong Song, Chong Li, Seo Jin Park</p>
                 </div>
               }
             >
               <div className="space-y-4">
                 <div>
                   <ul className="mt-3 space-y-3 pl-5 text-xs">
+                    <ProjectItem>
+                      <span className="font-medium">
+                        Democratizing MoE LLM Decoding via Barrier-Free Expert Parallelism
+                      </span>
+                      <br />
+                      <strong>Yizhuo Liang*</strong>, Shaoyu Wang*, Jaeyong Song, Yanqi Zhou, Geon-Woo Kim, Guangrong He, Seo Jin Park<br />
+                      The 32nd ACM Symposium on Operating Systems Principles (SOSP '26), Oct 2026<br />
+                      <span className="text-zinc-500">* Equal contribution</span>
+                    </ProjectItem>
+                    <ProjectItem>
+                      <StyledLink href="https://arxiv.org/abs/2606.26607" variant="underline" className="font-medium">
+                        Moebius: Serving Mixture-of-Expert Models with Seamless Runtime Parallelism Switch
+                      </StyledLink>{" "}
+                      <br />
+                      Shaoyu Wang, <strong>Yizhuo Liang</strong>, Jaeyong Song, Chong Li, Seo Jin Park<br />
+                      <StyledLink href="https://arxiv.org/abs/2606.26607" variant="underline">arXiv:2606.26607</StyledLink> (Preprint), Jun 2026
+                    </ProjectItem>
                     <ProjectItem>
                       <StyledLink href="https://arxiv.org/abs/2512.14098" variant="underline" className="font-medium">
                         Cornserve: Efficiently Serving Any-to-Any Multimodal Models
