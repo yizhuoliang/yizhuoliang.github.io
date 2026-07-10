@@ -188,6 +188,12 @@ export default function Home() {
                   <div className="h-3" />
                   <p className="font-medium"><strong>Moebius: Serving Mixture-of-Expert Models with Seamless Runtime Parallelism Switch (Preprint)</strong></p>
                   <p className="text-xs mt-1">Shaoyu Wang, <strong>Yizhuo Liang</strong>, Jaeyong Song, Chong Li, Seo Jin Park</p>
+                  <div className="h-3" />
+                  <p className="font-medium"><strong>Cornserve: Efficiently Serving Any-to-Any Multimodal Models (Preprint)</strong></p>
+                  <p className="text-xs mt-1">Jeff J. Ma, Jae-Won Chung, Jisang Ahn, <strong>Yizhuo Liang</strong>, Akshay Jajoo, Myungjin Lee, Mosharaf Chowdhury</p>
+                  <div className="h-3" />
+                  <p className="font-medium"><strong>Granular Resource Demand Heterogeneity (HotOS'25)</strong></p>
+                  <p className="text-xs mt-1"><strong>Yizhuo Liang</strong>, Ramesh Govindan, Seo Jin Park</p>
                 </div>
               }
             >
