@@ -182,7 +182,7 @@ export default function Home() {
               defaultExpanded={false}
               summary={
                 <div className="space-y-1">
-                  <p className="font-medium"><strong>Democratizing MoE LLM Decoding via Barrier-Free Expert Parallelism (SOSP'26)</strong></p>
+                  <p className="font-medium"><strong>StreamEP: Straggler-Tolerant MoE Decoding without Communication Barriers (SOSP'26)</strong></p>
                   <p className="text-xs mt-1"><strong>Yizhuo Liang*</strong>, Shaoyu Wang*, Jaeyong Song, Yanqi Zhou, Geon-Woo Kim, Guangrong He, Seo Jin Park</p>
                   <div className="h-3" />
                   <p className="font-medium"><strong>Moebius: Serving Mixture-of-Expert Models with Seamless Runtime Parallelism Switch (Preprint)</strong></p>
@@ -201,7 +201,7 @@ export default function Home() {
                   <ul className="mt-3 space-y-3 pl-5 text-xs">
                     <ProjectItem>
                       <span className="font-medium">
-                        Democratizing MoE LLM Decoding via Barrier-Free Expert Parallelism
+                        StreamEP: Straggler-Tolerant MoE Decoding without Communication Barriers
                       </span>
                       <br />
                       <strong>Yizhuo Liang*</strong>, Shaoyu Wang*, Jaeyong Song, Yanqi Zhou, Geon-Woo Kim, Guangrong He, Seo Jin Park<br />
