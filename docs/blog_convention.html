@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Technical blog conventions</title>
+<style>
+@font-face{font-family:JetBrains;src:url(../public/fonts/JetBrainsMono/webfonts/JetBrainsMono-Regular.woff2)}
+@font-face{font-family:JetBrains;src:url(../public/fonts/JetBrainsMono/webfonts/JetBrainsMono-Bold.woff2);font-weight:700}
+*{box-sizing:border-box}body{margin:0;background:#f4f4f5;color:#16181a;font:15px/1.65 JetBrains,ui-monospace,monospace}
+main{max-width:840px;margin:32px auto;padding:clamp(20px,5vw,48px);background:white;border:1px solid #ddd}
+h1,h2{line-height:1.2;letter-spacing:-.045em}h1{font-size:clamp(26px,5vw,37px);margin:0}h2{font-size:20px;margin:1.8em 0 .35em}
+p{margin:.5em 0}table{border-collapse:collapse;width:100%}th,td{text-align:left;vertical-align:top;border-bottom:1px solid #ddd;padding:.6em .4em}th{font-size:13px}a{color:inherit;text-underline-offset:.2em}
+</style></head>
+<body><main>
+<h1>Technical blog conventions</h1>
+<h2>Lead with the decision</h2>
+<p>Open the TL;DR with the finding a reader can use. Give the conditions under which the answer changes. In the CTA article, tensor shape and L2 capacity determine which operand benefits most from reuse. That explains why a high-concurrency workload can favor a different schedule from a wide projection. Save the timing pairs for the figure.</p>
+<p>Show the strongest result first. Then introduce the minimum background needed to read it, use a controlled experiment to explain the mechanism, and return to the opening figure with a model. Arrange evidence in the order a reader needs it. The experiment log can keep the chronology.</p>
+<h2>Give each detail one home</h2>
+<table><thead><tr><th>Where</th><th>What belongs there</th></tr></thead><tbody>
+<tr><td>Prose</td><td>The decision, the mechanism, and what the evidence establishes. Quote a number when it changes the interpretation. A paragraph beside a chart should explain why the pattern appears.</td></tr>
+<tr><td>Drawing</td><td>Geometry, order, grouping and movement. Put dimension arrows on the edges they measure. Outline tiles sharing an operand. Put sequence numbers and a consistent dark-to-light scale on the output matrix.</td></tr>
+<tr><td>Labels and legend</td><td>The quantity, units, sign convention, and visual encoding. Put a shared scale above comparable panels. Generate its swatches from the same bins used to color the data.</td></tr>
+<tr><td>Spec strip</td><td>The few facts that set the scope of the result, such as GPU, usable or physical cache size, kernel and tile shape. Give each fact one compact chip. A CTA-pair count already conveys the pairing.</td></tr>
+<tr><td>Caption and tooltip</td><td>Use the caption for how to read interpolation, uncertainty, or an exceptional dimension. Put exact measurements in a tooltip with units and enough precision to reconstruct the comparison.</td></tr>
+</tbody></table>
+<h2>Use the reader’s vocabulary</h2>
+<p>Name the operation before introducing its symbol. Use “tokens per expert,” “hidden size” and “intermediate size,” and define an acronym at first use when the audience needs it. Check how each dimension maps to the actual projection. A down projection takes the intermediate width as its reduction dimension.</p>
+<p>Replace run names and private shorthand with the property being tested. Delete sentences that narrate an axis title, expand an obvious label, or correct a misconception the reader has no reason to hold. If removing a sentence loses information, decide whether that information belongs on the drawing, in the caption, or in the argument.</p>
+<h2>Make the mechanism visible</h2>
+<p>Give each figure one job. A matrix-product diagram shows which inputs produce one output tile. A scheduling diagram shows when tiles sharing those inputs are assigned. For memory layouts, draw the physical regions, extent and ownership once. For a process that changes over time, show how the state changes in that same space.</p>
+<p>Use smaller labels for tile dimensions than for full matrix dimensions. Keep mathematical notation consistent and typeset equations that the argument uses. Prefer square corners for matrix cells and reuse outlines, so their edges line up. Align every figure with the text column, including the opening figure.</p>
+<h2>Make the comparison inspectable</h2>
+<p>State what changed between runs, what stayed fixed, and what was measured. Distinguish a whole-kernel timing from an isolated operand replay. Identify a proposed explanation or a scaling prediction as such. When two curves overlap, explain the agreement and let the reader inspect either series.</p>
+<p>Use the same axes and color scale across panels. Start latency and throughput bars at zero. Choose axis ranges for the workloads readers care about. Mark actual model shapes directly on a sweep. Use linear axes by default; a log scale earns its place when ratios or orders of magnitude are the question.</p>
+<p>Show the full comparison on page load. Hover, focus or tap can reveal the underlying numbers. Place compact <b>Raw Data</b> and <b>Code</b> links below the plot. Check that the signs, units, denominators and plotted values agree with the download.</p>
+<h2>Fit the site</h2>
+<p>Set article prose in proportional Inter. Use the homepage’s JetBrains Mono for headings, plot labels, and technical metadata. Render article figures directly in HTML, SVG or JavaScript, with their data in the page so the article works offline. Give index cards a square PNG thumbnail on the right and top-align the title, date and byline on the left. Check the rendered card dimensions, small-screen labels, keyboard interactions and links in the exported site.</p>
+<p><a href="../public/blog/cta-wave-scheduling.html">Worked example · CTA wave scheduling</a></p>
+</main></body></html>

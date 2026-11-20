@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { BookOpen } from 'lucide-react'
 import { Card } from "@/components/ui/card"
 import { 
   ExpandableSection, 
@@ -58,6 +59,12 @@ export default function Home() {
                       href="https://scholar.google.com/citations?user=86jYY2MAAAAJ&hl=en&oi=ao"
                     >
                       Google Scholar
+                    </ContactItem>
+                    <ContactItem
+                      icon={<BookOpen aria-hidden="true" className="h-3.5 w-3.5 text-zinc-500" />}
+                      href="/blog/index.html"
+                    >
+                      Technical Blogs
                     </ContactItem>
                   </div>
                 </div>
